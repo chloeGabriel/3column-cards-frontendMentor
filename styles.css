@@ -39,7 +39,6 @@ main {
     display: flex;
     padding: 3rem;
     flex-direction: column;
-    align-items: flex-start;
 }
 
 .bg-first {
@@ -76,13 +75,14 @@ button {
     text-transform: capitalize;
     font-size: 1rem;
     border: 2px solid transparent;
+    transition: ease-in .3s;
+    cursor: pointer;
 }
 
 button:hover {
     border: 2px solid white;
     background-color: transparent;
     color: white;
-    transition: 0.3s;
 }
 
 .first {
