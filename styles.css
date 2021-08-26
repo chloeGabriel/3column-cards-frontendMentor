@@ -1,0 +1,146 @@
+/* General settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', 'Big Shoulders Display', cursive, sans-serif;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+/* Main content */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    max-width: 1080px;
+}
+
+.card {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bg-first {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.bg-second {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.bg-third {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+/* Card contents */
+.card-header, .card-body, .card-footer {
+    margin: 10px 0 10px 0;
+}
+.card-header h1 {
+    margin: 20px 0
+}
+.card-body {
+    line-height: 2;
+}
+
+button {
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px 50px;
+    margin-top: 50px;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border: 2px solid transparent;
+}
+
+button:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.first {
+    color: hsl(31, 77%, 52%);
+}
+.second {
+    color: hsl(184, 100%, 22%);
+}
+.third {
+    color: hsl(179, 100%, 13%);
+}
+/* Footer Attributions */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: hsl(31, 77%, 52%);
+}
+
+.attribution p {
+    color: darkslategray;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 989px) {
+    main {
+        height: 180vh;
+    }
+    .container {
+        flex-direction: column;
+        max-width: 350px;
+    }
+    .bg-first {
+        border-radius: 10px 10px 0 0;
+    }
+    .bg-third {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .card-header, .card-body, .card-footer {
+        margin: 10px 0 5px 0;
+    }
+    button {
+        margin-top: 5px;
+    }
+
+    .attribution {
+        position: relative;
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (min-width: 990px) and (max-width: 1100px) {
+    .card {
+        padding: 40px;
+    }
+}
